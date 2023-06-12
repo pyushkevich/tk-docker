@@ -16,7 +16,7 @@ RUN cmake \
 RUN cmake --build . --parallel
 
 # Download and build c3d
-RUN git clone https://github.com/pyushkevich/c3d /tk/c3d/src && cd /tk/c3d/src && git checkout feab598
+RUN git clone https://github.com/pyushkevich/c3d /tk/c3d/src && cd /tk/c3d/src && git checkout 7ecbb99
 RUN mkdir /tk/c3d/build
 WORKDIR /tk/c3d/build
 RUN cmake \
